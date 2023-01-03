@@ -81,24 +81,21 @@ cp /opt/apache-hive-2.1.0-bin/lib/mysql-connector-java-5.1.38.jar .
 
   - http://node1:8088/
 
-    ![image-20210205160746423](images/image-20210205160746423.png)
-
   - 进入hadoop容器，查看服务进程
 
     ```shell
-    root@cb338fa74260 hadoop]# jps -vm | grep 6017   
+  root@cb338fa74260 hadoop]# jps -vm | grep 6017   
     6017 ExecutorLauncher --arg spark.bigdata.cn:37890 --properties-file /tmp/hadoop-root/nm-local-dir/usercache/root/appcache/application_1608087619253_0001/container_1608087619253_0001_01_000001/__spark_conf__/__spark_conf__.properties -Xmx512m -Djava.io.tmpdir=/tmp/hadoop-root/nm-local-dir/usercache/root/appcache/application_1608087619253_0001/container_1608087619253_0001_01_000001/tmp -Dspark.yarn.app.container.log.dir=/opt/hadoop-2.7.0/logs/userlogs/application_1608087619253_0001/container_1608087619253_0001_01_000001
     [root@cb338fa74260 hadoop]# jps -vm | grep CoarseGrainedExecutorBackend
     6054 CoarseGrainedExecutorBackend --driver-url spark://CoarseGrainedScheduler@spark.bigdata.cn:37890 --executor-id 1 --hostname hadoop.bigdata.cn --cores 1 --app-id application_1608087619253_0001 --user-class-path file:/tmp/hadoop-root/nm-local-dir/usercache/root/appcache/application_1608087619253_0001/container_1608087619253_0001_01_000002/__app__.jar -Xmx1024m -Djava.io.tmpdir=/tmp/hadoop-root/nm-local-dir/usercache/root/appcache/application_1608087619253_0001/container_1608087619253_0001_01_000002/tmp -Dspark.driver.port=37890 -Dspark.yarn.app.container.log.dir=/opt/hadoop-2.7.0/logs/userlogs/application_1608087619253_0001/container_1608087619253_0001_01_000002 -XX:OnOutOfMemoryError=kill %p
     6102 CoarseGrainedExecutorBackend --driver-url spark://CoarseGrainedScheduler@spark.bigdata.cn:37890 --executor-id 3 --hostname hadoop.bigdata.cn --cores 1 --app-id application_1608087619253_0001 --user-class-path file:/tmp/hadoop-root/nm-local-dir/usercache/root/appcache/application_1608087619253_0001/container_1608087619253_0001_01_000004/__app__.jar -Xmx1024m -Djava.io.tmpdir=/tmp/hadoop-root/nm-local-dir/usercache/root/appcache/application_1608087619253_0001/container_1608087619253_0001_01_000004/tmp -Dspark.driver.port=37890 -Dspark.yarn.app.container.log.dir=/opt/hadoop-2.7.0/logs/userlogs/application_1608087619253_0001/container_1608087619253_0001_01_000004 -XX:OnOutOfMemoryError=kill %p
     6079 CoarseGrainedExecutorBackend --driver-url spark://CoarseGrainedScheduler@spark.bigdata.cn:37890 --executor-id 2 --hostname hadoop.bigdata.cn --cores 1 --app-id application_1608087619253_0001 --user-class-path file:/tmp/hadoop-root/nm-local-dir/usercache/root/appcache/application_1608087619253_0001/container_1608087619253_0001_01_000003/__app__.jar -Xmx1024m -Djava.io.tmpdir=/tmp/hadoop-root/nm-local-dir/usercache/root/appcache/application_1608087619253_0001/container_1608087619253_0001_01_000003/tmp -Dspark.driver.port=37890 -Dspark.yarn.app.container.log.dir=/opt/hadoop-2.7.0/logs/userlogs/application_1608087619253_0001/container_1608087619253_0001_01_000003 -XX:OnOutOfMemoryError=kill %p
     ```
-
+  
   - 查看服务的spark监控页面
 
     - 可以看到YARN上一共创建了4个container，一个是AM所运行的container，还有3个是我们提交thrift server所指定的executor数量。
 
-    ![image-20210205161347514](images/image-20210205161347514.png)
 
 ## 使用beeline连接ThriftServer2
 
@@ -134,7 +131,6 @@ cp /opt/apache-hive-2.1.0-bin/lib/mysql-connector-java-5.1.38.jar .
 
 - 在web ui上查看运行运行的sql语句
 
-  ![image-20210205161538129](images/image-20210205161538129.png)
 
 ## 配置spark thrift server自动启动
 
