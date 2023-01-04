@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # _*_ coding: utf-8 _*_
-# Author: Liu
+# Author: Alex_liu
 # Program function:
 
 # import pyhdfs
