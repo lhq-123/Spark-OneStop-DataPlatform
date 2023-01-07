@@ -58,10 +58,10 @@ class CHiveTableFromOracleTable:
             buffer.append(CreateMetaCommon.getTableProperties(dbName, tableName))
             dbFolderName = CreateMetaCommon.getDBFolderName(dbName)
             userName = CreateMetaCommon.getUserNameByDBName(dbName)
-            buffer.append(" location '/data/dw/" + dbFolderName + "/one_make/" + CreateMetaCommon.getDynamicDir(dbName,dynamicDir) + "/" + userName + tableName + "'")
+            buffer.append(" location '/data/dw/" + dbFolderName + "/one_make/" + CreateMetaCommon.getDynamicDir(dbName, dynamicDir) + "/" + userName + tableName + "'")
             cursor = self.hiveConn.cursor()
             cursor.execute(''.join(buffer))
-            logging.warning(f'oracle表转换{dbFolderName}后的Hive DDL语句为:\n{"".join(buffer)}')
+            logging.warning(f'oracle表转换{dbFolderName}后的SparkSQL的DDL语句为:\n{"".join(buffer)}')
         # 异常处理
         except Exception as exception:
             print(exception)

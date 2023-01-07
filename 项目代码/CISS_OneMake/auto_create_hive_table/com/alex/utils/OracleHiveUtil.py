@@ -10,7 +10,8 @@ from pyhive import hive                                                 # 导入
 import os                                                               # 导入系统包
 
 # 配置Oracle的客户端驱动文件路径
-LOCATION = r"D:\\instantclient_12_2"
+# 根据自己电脑的位置改
+LOCATION = r"C:\\Users\\admin\\Desktop\\Spark工业一站式项目\\Spark-OneStop-DataPlatform\\项目代码\\Pip\\instantclient_12_2"
 os.environ["PATH"] = LOCATION + ";" + os.environ["PATH"]
 
 
@@ -19,7 +20,7 @@ def getOracleConn():
     用户获取Oracle的连接对象：cx_Oracle.connect(host='', port='', username='', password='', param='')
     :return:
     """
-    oracleConn = None   #构建Oracle连接对象
+    oracleConn = None
     try:
         ORACLE_HOST = ConfigLoader.getOracleConfig('oracleHost')
         ORACLE_PORT = ConfigLoader.getOracleConfig('oraclePort')
@@ -61,10 +62,10 @@ def getHiveConn():
     # 构建Hive的连接对象
     hiveConn = None
     try:
-        HIVE_HOST= ConfigLoader.getHiveConfig("hiveHost")
-        HIVE_PORT= ConfigLoader.getHiveConfig("hivePort")
-        HIVE_USER= ConfigLoader.getHiveConfig("hiveUName")
-        HIVE_PASSWORD= ConfigLoader.getHiveConfig("hivePassWord")
+        HIVE_HOST = ConfigLoader.getHiveConfig("hiveHost")
+        HIVE_PORT = ConfigLoader.getHiveConfig("hivePort")
+        HIVE_USER = ConfigLoader.getHiveConfig("hiveUName")
+        HIVE_PASSWORD = ConfigLoader.getHiveConfig("hivePassWord")
         hiveConn = hive.Connection(host=HIVE_HOST,port=HIVE_PORT,username=HIVE_USER,auth='CUSTOM',password=HIVE_PASSWORD)
     # 异常处理
     except Exception as error:

@@ -7,7 +7,7 @@ import configparser
 
 # load and read config.ini
 config = configparser.ConfigParser()
-config.read('D:\\PythonProject\\PythonTest01\\auto_create_hive_table\\resources\\config.txt')
+config.read('C:\\Users\\admin\\Desktop\\Spark工业一站式项目\\Spark-OneStop-DataPlatform\\项目代码\\CISS_OneMake\\auto_create_hive_table\\com\\resources\\config.txt')
 
 
 # 根据key获得value
@@ -23,6 +23,7 @@ def getOracleConfig(key):
 # 根据key获得spark连接hive数据库的配置信息
 def getSparkConnHiveConfig(key):
     return config.get('SparkConnHive', key)
+
 
 # 根据key获得hive数据库的配置信息
 def getHiveConfig(key):

@@ -6,10 +6,6 @@ BASE_PATH = os.path.dirname(
     os.path.dirname(__file__)
 )
 # logging 的配置信息
-"""
-logging 配置
-"""
-
 # 定义三种日志的输出格式
 standard_format = '[%(asctime)s][%(threadName)s:%(thread)d][task_id:%(name)s][%(filename)s:%(lineno)d]' \
                   '[%(levelname)s][%(message)s]'

@@ -1,4 +1,4 @@
-from auto_create_hive_table.config import settings  # 导入项目下的 settings.py 文件
+from auto_create_hive_table.com.config import settings  # 导入项目下的 settings.py 文件
 import logging.config
 
 
