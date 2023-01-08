@@ -98,7 +98,7 @@ TBLPROPERTIES
 先安装开发时所依赖的第三方库：
 
 ```shell
-# 安装sasl包(在whl文件所在目录下执行安装)，whl文件在OneMake同级的Pip目录下，不是python3.9就自行去网上下载对应版本
+# 安装sasl包(在whl文件所在目录下执行安装)，whl文件在OneMake同级的Pip目录下，不是python3.7就自行去网上下载对应版本
 pip install sasl-0.2.1-cp37-cp37m-win_amd64.whl
 # 安装thrift包
 pip install thrift
@@ -176,7 +176,7 @@ Spark-OneStop-DataPlatform\项目代码\OneMake\Auto_Create_SparkTable包下的�
 如果没有这个sparksubmit的话就开启开启STS：
 
 ```shell
-# 在spark/conf目录下执行
+# 在spark/sbin目录下执行
 ./start-thriftserver.sh \
 --name sparksql-thrift-server \
 --master yarn \
@@ -191,6 +191,7 @@ Spark-OneStop-DataPlatform\项目代码\OneMake\Auto_Create_SparkTable包下的�
 通过Beeline连接SparkThriftServer：
 
 ```shell
+# beeline !connect jdbc:hive2://spark.bigdata.cn:10001
 [root@c5836fa7593c conf] beeline
 Beeline version 1.2.1.spark2 by Apache Hive
 beeline> !connect jdbc:hive2://spark.bigdata.cn:10001
@@ -220,6 +221,20 @@ ODS层建表完成后可以在beeline中随便查看一张表看是否有数据�
 
 如果没有数据的话，可以去看一下日志：
 
-请注意日志的debug信息，有些error日志会在debug信息里：
+使用了异常，如果有错误的话，会把白色的日志打印到控制台：
 
-![Snipaste_2023-01-07_23-05-42](assets/Snipaste_2023-01-07_23-05-42.png)
+![Snipaste_2023-01-08_01-23-59](assets/Snipaste_2023-01-08_01-23-59.png)
+
+```shell
+org.apache.spark.sql.AnalysisException: org.apache.hadoop.hive.ql.metadata.HiveException: Unable to move source hdfs:// to destination hdfs://
+```
+
+这是我在重跑的时候出现的，因为我配置的是Spark on hive ，所以使用的是hive的catalog，一开始没配置，后面我在spark容器的spark/conf/hive-site.xml里加上下面的配置然后重启spark容器再重跑就没问题了
+
+```xml
+<property>
+      <name>metastore.catalog.default</name>
+      <value>hive</value>
+</property>
+```
+
