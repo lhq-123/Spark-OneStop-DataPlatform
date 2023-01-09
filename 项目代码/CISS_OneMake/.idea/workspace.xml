@@ -2,97 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d168af1f-6786-44b4-b83f-000563d483df" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/MainApplication.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateMetaCommon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateSparkTableFromOracle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateSparkTablePartition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/LoadDataToDWD.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/fileformat/AvroTableProperties.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/fileformat/OrcSnappyTableProperties.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/fileformat/OrcTableProperties.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/fileformat/TableProperties.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/entity/ColumnMeta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/entity/TableMeta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ConfigUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ConnectUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/OracleMetaUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ReadFileUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/TableNameUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/config/common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/log/alex.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/resources/config.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/resources/tablenames.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dm/etl/mart_operation_dept.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dm/meta_data/create_db_tables.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_bn_blp_hx.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_bnlp_hx.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_call_service.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_csp_os.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_csp_workerorder.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_csp_xhp_hx.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_oil_station.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_regular_exp.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_install.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_repair.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_rtn_visit.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_stn_ma.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_stn_ma_dtl.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_transfer.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_trvl_exp.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_work_order.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwb/meta_data/create_db_tables.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwd/etl/CISS_BASE_AREAS.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwd/etl/ciss_org_employee.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dwd/meta_data/dwd_create_db_tables.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_areas.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_date.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_emporg.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_fault_catalog.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_logistics.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_oilstation.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_service_attribute.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_srv_station.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_warehouse.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/dws/meta_data/dws_create_db_tables.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/etl/partition_etl.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/meta_data/create_db_tables.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/meta_data/tablenames.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/python/full_import_tables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/python/incr_import_tables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/python/upload_avro_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/full_import_tables.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/full_import_tables.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/incr_import_tables.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/incr_import_tables.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/upload_avro_schema.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_bn_blp_hx.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_bnlp_hx.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_customer.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_dispatch.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_expense.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_install.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_oilstation.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_repair.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_rtn_visit.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_worker_order.hql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dw/st/meta_data/create_db_tables.hql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CISS_OneMake.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CISS_OneMake.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_integration/python/full_import_tables.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_integration/python/incr_import_tables.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_integration/python/upload_avro_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/full_import_tables.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/full_import_tables.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/incr_import_tables.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/incr_import_tables.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/upload_avro_schema.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateSparkTableFromOracle.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateSparkTableFromOracle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673249417080</updated>
       <workItem from="1673249418231" duration="929000" />
-      <workItem from="1673272723506" duration="4948000" />
+      <workItem from="1673272723506" duration="5175000" />
     </task>
     <servers />
   </component>

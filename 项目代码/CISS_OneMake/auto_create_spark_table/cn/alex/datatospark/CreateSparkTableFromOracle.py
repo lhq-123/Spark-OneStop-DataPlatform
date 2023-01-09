@@ -4,10 +4,10 @@ __coding__ = "utf-8"
 __author__ = "alex"
 
 # 导包
-from pyhive import hive                                                         # 导入Hive操作包
-from auto_create_spark_table.cn.alex.datatospark import CreateMetaCommon        # 导入常量数据包
-from auto_create_spark_table.cn.alex.utils import OracleMetaUtil               # 导入Oracle表信息的工具类
-import logging                                                                  # 导入日志记录包
+from pyhive import hive  # 导入Hive操作包
+from auto_create_spark_table.cn.alex.datatospark import CreateMetaCommon  # 导入常量数据包
+from auto_create_spark_table.cn.alex.utils import OracleMetaUtil  # 导入Oracle表信息的工具类
+import logging  # 导入日志记录包
 
 
 class CreateSparkTableFromOracle:
@@ -17,13 +17,8 @@ class CreateSparkTableFromOracle:
         self.oracleConn = oracleConn
         self.hiveConn = hiveConn
 
-    # 创建数据库方法
+    # 创建数据库方法,根据传递的数据库名称，在SparkSQL中创建数据库
     def executeCreateDbHQL(self, dbName):
-        """
-        根据传递的数据库名称，在Hive中创建数据库
-        :param dbName: 数据库名称
-        :return: None
-        """
         createDbHQL = 'create database if not exists ' + dbName
         cursor = self.hiveConn.cursor()
         try:
@@ -36,15 +31,8 @@ class CreateSparkTableFromOracle:
             if cursor:
                 cursor.close()
 
-    # 执行Hive建表
+    # 执行Hive建表, 用于根据传递的数据库名称、表名在Hive中创建对应的表，self为当前类的实例对象
     def executeCreateTableHQL(self, dbName, tableName, dynamicDir):
-        """
-        用于根据传递的数据库名称、表名在Hive中创建对应的表，self为当前类的实例对象
-        :param dbName: 数据库名称【ODS、DWD】
-        :param tableName: 表名
-        :param dynamicDir: 全量或者增量【full_imp、incr_imp】
-        :return: None
-        """
         buffer = []
         cursor = None
         try:
@@ -58,7 +46,8 @@ class CreateSparkTableFromOracle:
             buffer.append(CreateMetaCommon.getTableProperties(dbName, tableName))
             dbFolderName = CreateMetaCommon.getDBFolderName(dbName)
             userName = CreateMetaCommon.getUserNameByDBName(dbName)
-            buffer.append(" location '/data/dw/" + dbFolderName + "/one_make/" + CreateMetaCommon.getDynamicDir(dbName,dynamicDir) + "/" + userName + tableName + "'")
+            buffer.append(" location '/data/dw/" + dbFolderName + "/one_make/" + CreateMetaCommon.getDynamicDir(dbName,
+                                                                                                                dynamicDir) + "/" + userName + tableName + "'")
             cursor = self.hiveConn.cursor()
             cursor.execute(''.join(buffer))
             logging.warning(f'oracle表转换{dbFolderName}后的Hive DDL语句为:\n{"".join(buffer)}')
@@ -71,15 +60,8 @@ class CreateSparkTableFromOracle:
                 cursor.close()
 
 
-# 根据数据库得到部分建表语句，ODS 与 DWD差别部分处理
+# 根据数据库得到部分建表语句，ODS 与 DWD差别部分处理,用于实现将Oracle的列的信息，解析为Hive的列的信息，实现类型转换等
 def getODSStringBuffer(buffer, dbName, tableMeta):
-    """
-    用于实现将Oracle的列的信息，解析为Hive的列的信息，实现类型转换等
-    :param buffer: 当前拼接的建表语句
-    :param dbName: 当前数据库名称
-    :param tableMeta: 当前表的信息
-    :return: None
-    """
     simpleName = CreateMetaCommon.getDBFolderName(dbName)
     if not 'ods'.__eq__(simpleName):
         buffer.append('(\n\t')
@@ -107,14 +89,8 @@ def getODSStringBuffer(buffer, dbName, tableMeta):
     return buffer
 
 
+# 将Oracle中列的类型转换为Hive中的数据类型
 def convertDataType(oracleDType: str, dataScale, dataScope):
-    """
-    将Oracle中列的类型转换为Hive中的数据类型
-    :param oracleDType: 列的类型
-    :param dataScale: 列的长度
-    :param dataScope: 列的精度
-    :return:
-    """
     # 字段名称和字段类型不为空
     if oracleDType:
         # 如果Oracle中为timestamp，返回long类型,注意:long类型Hive不支持，SparkSQL支持
