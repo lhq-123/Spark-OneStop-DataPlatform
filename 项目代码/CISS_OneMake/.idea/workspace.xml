@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d168af1f-6786-44b4-b83f-000563d483df" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/MainApplication.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateMetaCommon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateSparkTableFromOracle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateSparkTablePartition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/LoadDataToDWD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/fileformat/AvroTableProperties.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/fileformat/OrcSnappyTableProperties.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/fileformat/OrcTableProperties.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/fileformat/TableProperties.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/entity/ColumnMeta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/entity/TableMeta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ConfigUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ConnectUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/OracleMetaUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ReadFileUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/TableNameUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/config/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/config/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/log/alex.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/resources/config.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_create_spark_table/resources/tablenames.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dm/etl/mart_operation_dept.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dm/meta_data/create_db_tables.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_bn_blp_hx.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_bnlp_hx.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_call_service.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_csp_os.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_csp_workerorder.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_csp_xhp_hx.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_oil_station.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_regular_exp.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_install.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_repair.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_rtn_visit.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_stn_ma.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_srv_stn_ma_dtl.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_transfer.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_trvl_exp.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/etl/fact_work_order.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwb/meta_data/create_db_tables.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwd/etl/CISS_BASE_AREAS.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwd/etl/ciss_org_employee.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dwd/meta_data/dwd_create_db_tables.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_areas.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_date.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_emporg.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_fault_catalog.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_logistics.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_oilstation.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_service_attribute.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_srv_station.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/etl/dim_warehouse.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/dws/meta_data/dws_create_db_tables.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/etl/partition_etl.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/meta_data/create_db_tables.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/meta_data/tablenames.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/python/full_import_tables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/python/incr_import_tables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/python/upload_avro_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/full_import_tables.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/full_import_tables.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/incr_import_tables.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/incr_import_tables.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/ods/shell/sqoop_script/upload_avro_schema.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_bn_blp_hx.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_bnlp_hx.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_customer.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_dispatch.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_expense.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_install.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_oilstation.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_repair.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_rtn_visit.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/etl/subj_worker_order.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dw/st/meta_data/create_db_tables.hql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CISS_OneMake.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CISS_OneMake.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_integration/python/full_import_tables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_integration/python/incr_import_tables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_integration/python/upload_avro_schema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/full_import_tables.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/full_import_tables.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/incr_import_tables.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/incr_import_tables.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_integration/shell/sqoop_script/upload_avro_schema.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2K511jitgU6FRsNfsBynkheKllr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/auto_create_hive_table/resources" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake\auto_create_hive_table\resources" />
+      <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake\auto_create_hive_table" />
+      <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake\auto_create_hive_table\cn\itcast\resource" />
+      <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.MainApplication">
+    <configuration name="EntranceApp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CISS_OneMake" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto_create_hive_table/cn/itcast" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto_create_hive_table/cn/itcast/EntranceApp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MainApplication" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CISS_OneMake" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto_create_spark_table/cn/alex" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto_create_spark_table/cn/alex/MainApplication.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.MainApplication" />
+        <item itemvalue="Python.EntranceApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="d168af1f-6786-44b4-b83f-000563d483df" name="变更" comment="" />
+      <created>1673249417080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673249417080</updated>
+      <workItem from="1673249418231" duration="929000" />
+      <workItem from="1673272723506" duration="4948000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CISS_OneMake$EntranceApp.coverage" NAME="EntranceApp 覆盖结果" MODIFIED="1673273370896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_create_hive_table/cn/itcast" />
+    <SUITE FILE_PATH="coverage/CISS_OneMake$MainApplication.coverage" NAME="MainApplication 覆盖结果" MODIFIED="1673278243524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_create_spark_table/cn/alex" />
+  </component>
+</project>

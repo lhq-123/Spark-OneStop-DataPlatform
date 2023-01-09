@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CISS_OneMake.iml" filepath="$PROJECT_DIR$/.idea/CISS_OneMake.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../Flink+Spark大型数仓/Spark-Flink-data-warehouse/项目代码/SparkOffline/.idea/SparkOffline.iml" filepath="$PROJECT_DIR$/../../../../Flink+Spark大型数仓/Spark-Flink-data-warehouse/项目代码/SparkOffline/.idea/SparkOffline.iml" />
     </modules>
   </component>
 </project>

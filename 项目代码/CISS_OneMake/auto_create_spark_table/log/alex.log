@@ -1,0 +1,770 @@
+[2023-01-09 23:29:43,462][MainThread:12384][task_id:alex][MainApplication.py:19][INFO][>>>>>>>>>>>>>>>>>>>>>>>>>>>>构建历史数据平台的ODS层和DWD层并加载数据<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2023-01-09 23:29:43,571][MainThread:12384][task_id:pyhive.hive][hive.py:583][DEBUG][TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xd8\x8a;\xe5L\xa4O\xfe\xb8I8n\x1bD\xe8g', secret=b'\xe7\x97\xd3\xbe_\xe7F\xcc\x94OL\xfb/\xfbC\xa3')), configuration={})]
+[2023-01-09 23:29:43,571][MainThread:12384][task_id:pyhive.hive][hive.py:449][INFO][USE `default`]
+[2023-01-09 23:29:43,571][MainThread:12384][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xd8\x8a;\xe5L\xa4O\xfe\xb8I8n\x1bD\xe8g', secret=b'\xe7\x97\xd3\xbe_\xe7F\xcc\x94OL\xfb/\xfbC\xa3')), statement='USE `default`', confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:29:43,583][MainThread:12384][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b')O\x98\xe6\xc4\xedA/\xa2\xb5[T\xa4\n:Y', secret=b'\xbd\x89\x8b\x87h+E\xc7\x8c\xe5\xe0\xecK\xaa\xd1\x1b'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:29:43,583][MainThread:12384][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:43,632][MainThread:1280][task_id:alex][MainApplication.py:19][INFO][>>>>>>>>>>>>>>>>>>>>>>>>>>>>构建历史数据平台的ODS层和DWD层并加载数据<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2023-01-09 23:30:43,723][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), configuration={})]
+[2023-01-09 23:30:43,723][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][USE `default`]
+[2023-01-09 23:30:43,723][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement='USE `default`', confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:43,731][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xac\x80~\xa0*hC\xe4\x93U\xb5\x11p`\x10\n', secret=b'J"JD7\xfbC\x9f\xb3\x84G\xfei\xc6O\x9a'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:43,731][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:43,733][MainThread:1280][task_id:alex][MainApplication.py:19][INFO][>>>>>>>>>>>>>>>>>>>>>>>>>>>>ODS层创建数据库<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2023-01-09 23:30:43,733][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create database if not exists one_make_ods]
+[2023-01-09 23:30:43,733][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement='create database if not exists one_make_ods', confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:43,739][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'W\xa9C\x05?KL\xa4\x92\x8fz\x8e`\xb1>5', secret=b'\x93Zv\x1b\x08\x10@i\x9a_\t\xa3D\x90\r\xa7'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:43,742][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:43,742][MainThread:1280][task_id:alex][MainApplication.py:19][INFO][>>>>>>>>>>>>>>>>>>>>>>>>>>>>ODS层全量表入库<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<]
+[2023-01-09 23:30:43,742][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_AREAS metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_AREAS' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_AREAS' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_AREAS') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:43,904][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_areas partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_AREAS.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_areas']
+[2023-01-09 23:30:43,905][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_areas partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_AREAS.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_areas'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:43,946][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b']z\x98&\x96\xdaG\xc7\x98F\xd1\x90\x08\xd6\x85!', secret=b'\xe5uHyx\xc9B\xf9\xa0\x9f\xe0\x1d\x15\x95\x98)'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:43,946][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_areas partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_AREAS.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_areas']
+[2023-01-09 23:30:43,946][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:43,946][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_BASEINFO metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_BASEINFO' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_BASEINFO' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_BASEINFO') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:44,109][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_baseinfo comment '公司账套，公司别，人员对应关系表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_BASEINFO.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_baseinfo']
+[2023-01-09 23:30:44,111][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_baseinfo comment '公司账套，公司别，人员对应关系表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_BASEINFO.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_baseinfo'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:44,151][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x1c\xf5[\x84Q\xd8N&\xb9:\xad\xb8t\x85D\x9e', secret=b'\xb2{\x0b72\x9eC}\x88\x85\xa0\x8a}fD\xb3'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:44,151][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_baseinfo comment '公司账套，公司别，人员对应关系表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_BASEINFO.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_baseinfo']
+[2023-01-09 23:30:44,151][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:44,151][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_CSP metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_CSP' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_CSP' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_CSP') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:44,316][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_csp comment '服务商基础信息' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_CSP.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_csp']
+[2023-01-09 23:30:44,318][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_csp comment '服务商基础信息' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_CSP.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_csp'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:44,349][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b"\x0c-'\xf5\xb0\xdbI\xdd\xb0\x84\xd3\x0c\xe7\x13\xf5\x9a", secret=b'\xe7\x16/\x8b\xd9\x08M\x80\x9aX\x1d\xd6$ \x9b\xa4'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:44,349][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_csp comment '服务商基础信息' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_CSP.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_csp']
+[2023-01-09 23:30:44,349][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:44,349][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_CUSTOMER metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_CUSTOMER' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_CUSTOMER' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_CUSTOMER') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:44,507][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_customer comment '客户信息表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_CUSTOMER.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_customer']
+[2023-01-09 23:30:44,507][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_customer comment '客户信息表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_CUSTOMER.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_customer'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:44,540][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xce)1>S\x1fN\x01\xa9\x91\x0ck\xfb\x7f\xfb*', secret=b'\x05\xc8\xa1\x11\xcb5J\x02\xbcH\x1c\xf0H\x96\x97n'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:44,540][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_customer comment '客户信息表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_CUSTOMER.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_customer']
+[2023-01-09 23:30:44,540][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:44,540][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_DEVICE metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_DEVICE' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_DEVICE' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_DEVICE') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:44,711][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_device comment '设备档案信息表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device']
+[2023-01-09 23:30:44,711][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_device comment '设备档案信息表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:44,740][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x9c"\xb6\xe6\x12\xd6D\xe5\xa7\x01Fq\'aX\x12', secret=b'\x84\xe0Y\x16\x13\xb3D\xc1\xbe\xad1\x03\x86-O5'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:44,740][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_device comment '设备档案信息表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device']
+[2023-01-09 23:30:44,742][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:44,742][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_DEVICE_DETAIL metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_DEVICE_DETAIL' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_DEVICE_DETAIL' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_DEVICE_DETAIL') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:44,901][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_device_detail partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_DETAIL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_detail']
+[2023-01-09 23:30:44,902][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_device_detail partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_DETAIL.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_detail'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:44,930][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x0f\xee.\xefY\x01J\xf3\xa0Yem\x82V|\xf0', secret=b'\xff\x15\x87"\xda\xd1C\xcd\xa0\xea\x82#\xcc\xa5YU'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:44,930][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_device_detail partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_DETAIL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_detail']
+[2023-01-09 23:30:44,931][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:44,931][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_DEVICE_FACTORY_INFO metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_DEVICE_FACTORY_INFO' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_DEVICE_FACTORY_INFO' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_DEVICE_FACTORY_INFO') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:45,051][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_device_factory_info comment '设备出厂信息（同步erp，erp表view_pro）' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_FACTORY_INFO.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_factory_info']
+[2023-01-09 23:30:45,051][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_device_factory_info comment '设备出厂信息（同步erp，erp表view_pro）' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_FACTORY_INFO.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_factory_info'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:45,079][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b';\xfeLk\x05\x04A\x8b\xa4\xe3G\x10\xc3\x80F\xf8', secret=b'\x9c\x9cG\x86`\x90A\xae\x89P<\xe8\x13\x01\xd7l'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:45,079][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_device_factory_info comment '设备出厂信息（同步erp，erp表view_pro）' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_FACTORY_INFO.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_factory_info']
+[2023-01-09 23:30:45,079][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:45,080][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_DEVICE_MODEL metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_DEVICE_MODEL' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_DEVICE_MODEL' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_DEVICE_MODEL') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:45,192][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_device_model comment '设备型号' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_MODEL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_model']
+[2023-01-09 23:30:45,193][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_device_model comment '设备型号' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_MODEL.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_model'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:45,219][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x90\x07$\xf1\xfe\xcdJ;\xa1\xe8W q\xc3\x88\xba', secret=b'\xfbi\x9c\xd4\x81\x1fO\xc0\xb0\xa6:\xe1!\xc5s\xdf'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:45,219][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_device_model comment '设备型号' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_MODEL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_model']
+[2023-01-09 23:30:45,221][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:45,221][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_DEVICE_NAME metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_DEVICE_NAME' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_DEVICE_NAME' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_DEVICE_NAME') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:45,347][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_device_name comment '设备名称' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_NAME.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_name']
+[2023-01-09 23:30:45,348][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_device_name comment '设备名称' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_NAME.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_name'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:45,376][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x19\xaf\x9d\xa5`\xaaE\xae\x88\xccn\x04\xec\xd0Nb', secret=b'\xe66\xad\x96\x08\xfeDJ\x95\x109\xb1*=\xde\x1f'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:45,376][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_device_name comment '设备名称' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_NAME.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_name']
+[2023-01-09 23:30:45,376][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:45,376][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_DEVICE_SYS_DEF_FAC metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_DEVICE_SYS_DEF_FAC' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_DEVICE_SYS_DEF_FAC' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_DEVICE_SYS_DEF_FAC') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:45,483][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_device_sys_def_fac comment '系统自定义出库信息' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_SYS_DEF_FAC.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_sys_def_fac']
+[2023-01-09 23:30:45,484][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_device_sys_def_fac comment '系统自定义出库信息' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_SYS_DEF_FAC.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_sys_def_fac'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:45,512][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x07(v-\x02BF\xfa\x91MH\xb8o&\xe8\xa3', secret=b'\x03\xf7\x1a1b\x12B"\xb4\x06\xab:+\x9a\xc6D'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:45,512][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_device_sys_def_fac comment '系统自定义出库信息' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_SYS_DEF_FAC.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_sys_def_fac']
+[2023-01-09 23:30:45,512][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:45,513][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_DEVICE_TYPE metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_DEVICE_TYPE' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_DEVICE_TYPE' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_DEVICE_TYPE') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:45,633][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_device_type comment '设备类型' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_TYPE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_type']
+[2023-01-09 23:30:45,633][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_device_type comment '设备类型' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_TYPE.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_type'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:45,664][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b"\xb3\xa1A\xf7\x87'B(\xb7\x12_\xcf\xffN\xfaG", secret=b'\x08\xfcJM-}@w\x98\xf5o\x03`\x11\x1c\x93'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:45,664][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_device_type comment '设备类型' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_DEVICE_TYPE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_device_type']
+[2023-01-09 23:30:45,664][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:45,665][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_FAULT_CATEGORY metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_FAULT_CATEGORY' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_FAULT_CATEGORY' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_FAULT_CATEGORY') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:45,775][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_fault_category comment '故障分类' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_FAULT_CATEGORY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_fault_category']
+[2023-01-09 23:30:45,776][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_fault_category comment '故障分类' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_FAULT_CATEGORY.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_fault_category'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:45,805][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'm\x1c4\xae\xcb\x99I4\x8c\\\x04lR\xd4\xb9\xff', secret=b'&\xe5\x9dr,\x90LO\x89\x0eOB\x13\xb2\xdcH'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:45,805][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_fault_category comment '故障分类' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_FAULT_CATEGORY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_fault_category']
+[2023-01-09 23:30:45,805][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:45,805][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_MATERIAL metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_MATERIAL' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_MATERIAL' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_MATERIAL') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:45,927][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_material partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_MATERIAL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_material']
+[2023-01-09 23:30:45,927][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_material partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_MATERIAL.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_material'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:45,956][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x81NJt\x900O\x93\xb2j_\x9a\x1d\xa5}a', secret=b'\xff\x87\x88\xb0\x94\x8dAm\xba\x1b<?\xea\xa3=#'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:45,956][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_material partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_MATERIAL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_material']
+[2023-01-09 23:30:45,956][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:45,956][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_MATERIAL_DETAIL metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_MATERIAL_DETAIL' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_MATERIAL_DETAIL' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_MATERIAL_DETAIL') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:46,066][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_material_detail partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_MATERIAL_DETAIL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_material_detail']
+[2023-01-09 23:30:46,066][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_material_detail partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_MATERIAL_DETAIL.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_material_detail'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:46,098][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x95t7[\xf8IM\x88\x88y\n\xa4%"(T', secret=b'\x91\xb4\xc7{\xafC@g\x8d\x11]\xef\x06\x8b\x10\xc8'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:46,098][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_material_detail partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_MATERIAL_DETAIL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_material_detail']
+[2023-01-09 23:30:46,100][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:46,100][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_NOBUSINESS_SUBSIDY metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_NOBUSINESS_SUBSIDY' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_NOBUSINESS_SUBSIDY' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_NOBUSINESS_SUBSIDY') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:46,210][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_nobusiness_subsidy comment '不出差补助费用统计表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_NOBUSINESS_SUBSIDY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_nobusiness_subsidy']
+[2023-01-09 23:30:46,210][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_nobusiness_subsidy comment '不出差补助费用统计表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_NOBUSINESS_SUBSIDY.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_nobusiness_subsidy'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:46,243][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'4\xc3\xc9\xef(\xeeC\xea\x88\x04N[\xf6_\x0c^', secret=b'\x1f!\x9aNN\x00C\xc7\xad\x1f\xd2FA\xa6\x94\xb6'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:46,243][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_nobusiness_subsidy comment '不出差补助费用统计表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_NOBUSINESS_SUBSIDY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_nobusiness_subsidy']
+[2023-01-09 23:30:46,245][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:46,245][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_NO_SUBSIDY_TEMP metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_NO_SUBSIDY_TEMP' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_NO_SUBSIDY_TEMP' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_NO_SUBSIDY_TEMP') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:46,346][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_no_subsidy_temp comment '不出差补助费用统计临时表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_NO_SUBSIDY_TEMP.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_no_subsidy_temp']
+[2023-01-09 23:30:46,346][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_no_subsidy_temp comment '不出差补助费用统计临时表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_NO_SUBSIDY_TEMP.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_no_subsidy_temp'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:46,377][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x04\x0f|\x8e\x91J@/\xb8CK\xf3\xcd\xdcIL', secret=b'lf{.\x1b-CW\x90B\xd0-\xf8 \xbd\x9d'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:46,377][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_no_subsidy_temp comment '不出差补助费用统计临时表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_NO_SUBSIDY_TEMP.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_no_subsidy_temp']
+[2023-01-09 23:30:46,378][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:46,378][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_OILSTATION metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_OILSTATION' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_OILSTATION' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_OILSTATION') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:46,493][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_oilstation comment '油站基础信息表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_OILSTATION.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_oilstation']
+[2023-01-09 23:30:46,493][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_oilstation comment '油站基础信息表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_OILSTATION.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_oilstation'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:46,522][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x83\x07!8\xe88EM\x9a\xe6?\x9c](XW', secret=b'\x15k\x052\xff\xd0Ek\xb4\xc9\x95\xa1a\xb41\x88'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:46,523][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_oilstation comment '油站基础信息表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_OILSTATION.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_oilstation']
+[2023-01-09 23:30:46,523][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:46,523][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_OILSTATION_CONTRACT metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_OILSTATION_CONTRACT' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_OILSTATION_CONTRACT' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_OILSTATION_CONTRACT') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:46,643][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_oilstation_contract comment '合同油站关联' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_OILSTATION_CONTRACT.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_oilstation_contract']
+[2023-01-09 23:30:46,644][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_oilstation_contract comment '合同油站关联' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_OILSTATION_CONTRACT.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_oilstation_contract'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:46,685][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xd2\\\xc1\\\xff\x14L\x90\x83\xf0-\xb9\xb0\xb6X\xed', secret=b'\xb6\xf0p\x97\x8avD\xc7\xa5\x91\x04B\xe7\x14\xa4x'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:46,685][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_oilstation_contract comment '合同油站关联' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_OILSTATION_CONTRACT.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_oilstation_contract']
+[2023-01-09 23:30:46,685][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:46,685][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_OILSTATION_USER metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_OILSTATION_USER' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_OILSTATION_USER' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_OILSTATION_USER') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:46,796][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_oilstation_user comment '油站联系人' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_OILSTATION_USER.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_oilstation_user']
+[2023-01-09 23:30:46,796][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_oilstation_user comment '油站联系人' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_OILSTATION_USER.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_oilstation_user'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:46,828][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x9e\x8b\xc5\x03L\xe4G\x8c\x99<\xa6\x1a\xb1\xd3I\x8a', secret=b'\x0c\xd7\x03`\x1eQB/\x98;&+J\xe3Y\xd9'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:46,830][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_oilstation_user comment '油站联系人' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_OILSTATION_USER.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_oilstation_user']
+[2023-01-09 23:30:46,830][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:46,830][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_REASONCODE metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_REASONCODE' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_REASONCODE' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_REASONCODE') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:46,941][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_reasoncode partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_REASONCODE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_reasoncode']
+[2023-01-09 23:30:46,941][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_reasoncode partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_REASONCODE.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_reasoncode'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:46,976][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xe5/\xe5\xaa8\x15@\xb4\xbe!\xc9\x08P)\x96\\', secret=b'\x07w\x0e;pKC\xed\xb2x\xb1\x00s\xa8\x06$'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:46,976][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_reasoncode partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_REASONCODE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_reasoncode']
+[2023-01-09 23:30:46,976][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:46,976][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_SERVICESTATION metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_SERVICESTATION' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_SERVICESTATION' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_SERVICESTATION') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:47,086][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_servicestation comment '网点基础信息表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_SERVICESTATION.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_servicestation']
+[2023-01-09 23:30:47,086][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_servicestation comment '网点基础信息表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_SERVICESTATION.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_servicestation'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:47,120][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x81F\xd7\x9c\x1a]Ix\x95\x8b\xe3\x0bp\xab\x0cj', secret=b'\xdd\xd7H\x19\x1aQAM\x8e\xa4\xc1J\xf0\xa7w>'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:47,120][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_servicestation comment '网点基础信息表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_SERVICESTATION.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_servicestation']
+[2023-01-09 23:30:47,121][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:47,121][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_SUBSIDY metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_SUBSIDY' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_SUBSIDY' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_SUBSIDY') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:47,218][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_subsidy partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_SUBSIDY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_subsidy']
+[2023-01-09 23:30:47,218][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_subsidy partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_SUBSIDY.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_subsidy'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:47,248][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x1a\xb8\xd5+\xc4NL\xb1\xac2{\xdf\xf7\x89\xfd\xe7', secret=b'&\xde\xa3\x12g"J\x90\x9a\xa17\xddd\x8eYh'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:47,248][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_subsidy partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_SUBSIDY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_subsidy']
+[2023-01-09 23:30:47,249][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:47,249][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_SUB_ACCOUNITEM metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_SUB_ACCOUNITEM' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_SUB_ACCOUNITEM' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_SUB_ACCOUNITEM') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:47,356][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_sub_accounitem comment '核算项数据表（业务类型与客户类型---报销科目对应表）' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_SUB_ACCOUNITEM.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_sub_accounitem']
+[2023-01-09 23:30:47,357][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_sub_accounitem comment '核算项数据表（业务类型与客户类型---报销科目对应表）' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_SUB_ACCOUNITEM.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_sub_accounitem'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:47,390][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xeb\xd3\x99F\x8b\xcdF*\x93b\xa8\xc1\xecp\x99\x93', secret=b'U\xaa^\x92\x80\x87C}\xb74UV\xed\xb2\x8di'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:47,391][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_sub_accounitem comment '核算项数据表（业务类型与客户类型---报销科目对应表）' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_SUB_ACCOUNITEM.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_sub_accounitem']
+[2023-01-09 23:30:47,391][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:47,391][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_WAREHOUSE metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_WAREHOUSE' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_WAREHOUSE' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_WAREHOUSE') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:47,500][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_warehouse comment '仓库表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_WAREHOUSE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_warehouse']
+[2023-01-09 23:30:47,500][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_warehouse comment '仓库表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_WAREHOUSE.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_warehouse'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:47,537][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xff{\xae%6WH\t\x90=\xa7`I{n\xc6', secret=b'c\xc8\x88\x05\xc8\xdeBM\x8a\xab\x7fytlb='), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:47,537][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_warehouse comment '仓库表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_WAREHOUSE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_warehouse']
+[2023-01-09 23:30:47,538][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:47,538][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_BASE_WAREHOUSE_LOCATION metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_BASE_WAREHOUSE_LOCATION' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_BASE_WAREHOUSE_LOCATION' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_BASE_WAREHOUSE_LOCATION') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:47,645][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_base_warehouse_location comment '储位表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_WAREHOUSE_LOCATION.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_warehouse_location']
+[2023-01-09 23:30:47,645][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_base_warehouse_location comment '储位表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_WAREHOUSE_LOCATION.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_warehouse_location'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:47,680][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xb4Q\x88\xdb\xf0SF&\xba\x80\xf8\x8c\x9b\x92\xde\xbb', secret=b'/\xec\xb6\xf9\x95\x84L=\xa5-\xcbF\x9e\x98\x8d\x19'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:47,680][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_base_warehouse_location comment '储位表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_BASE_WAREHOUSE_LOCATION.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_base_warehouse_location']
+[2023-01-09 23:30:47,681][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:47,681][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_CSP_DEVICE_CATEGORY_MONEY metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_CSP_DEVICE_CATEGORY_MONEY' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_CSP_DEVICE_CATEGORY_MONEY' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_CSP_DEVICE_CATEGORY_MONEY') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:47,798][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_csp_device_category_money comment '服务商设备分类费用关联表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_DEVICE_CATEGORY_MONEY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_device_category_money']
+[2023-01-09 23:30:47,798][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_csp_device_category_money comment '服务商设备分类费用关联表' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_DEVICE_CATEGORY_MONEY.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_device_category_money'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:47,829][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xb5\xac\x1eD\x95kF\xff\x9fDv\xaaB*\xdd<', secret=b'&E\x8b\xeb\x83\xc9L\xd9\xa8]\x14?\r\xc12\x9a'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:47,829][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_csp_device_category_money comment '服务商设备分类费用关联表' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_DEVICE_CATEGORY_MONEY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_device_category_money']
+[2023-01-09 23:30:47,830][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:47,830][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_CSP_DEVICE_FAULT metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_CSP_DEVICE_FAULT' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_CSP_DEVICE_FAULT' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_CSP_DEVICE_FAULT') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:47,936][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_csp_device_fault comment '服务商设备故障信息' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_DEVICE_FAULT.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_device_fault']
+[2023-01-09 23:30:47,936][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_csp_device_fault comment '服务商设备故障信息' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_DEVICE_FAULT.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_device_fault'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:47,970][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x93\x0c\x0e\xd1\xef"H\x12\xb1+\x15\x17Ke7\xf7', secret=b"'Y4w\xfbyL\xec\xa9\x9fY\x96\xd8\x02\xd6N"), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:47,971][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_csp_device_fault comment '服务商设备故障信息' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_DEVICE_FAULT.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_device_fault']
+[2023-01-09 23:30:47,972][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:47,972][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_CSP_DEVICE_INST_MONEY metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_CSP_DEVICE_INST_MONEY' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_CSP_DEVICE_INST_MONEY' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_CSP_DEVICE_INST_MONEY') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:48,071][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_csp_device_inst_money partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_DEVICE_INST_MONEY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_device_inst_money']
+[2023-01-09 23:30:48,071][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_csp_device_inst_money partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_DEVICE_INST_MONEY.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_device_inst_money'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:48,105][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'Xv\xdb\xabEwGy\xb9}\xf6]\xbcj\xad\xc9', secret=b'\xd1\x96\x1fWe\x05L\xcc\x88\xc9\xe8Jp\xa2)\x0e'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:48,106][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_csp_device_inst_money partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_DEVICE_INST_MONEY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_device_inst_money']
+[2023-01-09 23:30:48,107][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:48,107][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_CSP_EXCHANGED_M_DTL metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_CSP_EXCHANGED_M_DTL' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_CSP_EXCHANGED_M_DTL' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_CSP_EXCHANGED_M_DTL') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:48,206][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_csp_exchanged_m_dtl comment '更换物料' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_EXCHANGED_M_DTL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_exchanged_m_dtl']
+[2023-01-09 23:30:48,206][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_csp_exchanged_m_dtl comment '更换物料' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_EXCHANGED_M_DTL.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_exchanged_m_dtl'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:48,240][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'I\x02jn.\xf8C\xd3\x9c\xe3[\xb6\x08{m\xb2', secret=b'PH8\x1f\x14\xbfK\xe9\xba\xeb\n0\xe5Q\xf9\x94'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:48,240][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_csp_exchanged_m_dtl comment '更换物料' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_EXCHANGED_M_DTL.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_exchanged_m_dtl']
+[2023-01-09 23:30:48,241][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:48,242][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_CSP_OIL_STATION metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_CSP_OIL_STATION' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_CSP_OIL_STATION' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_CSP_OIL_STATION') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:48,344][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_csp_oil_station comment '服务商油站信息' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_OIL_STATION.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_oil_station']
+[2023-01-09 23:30:48,345][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_csp_oil_station comment '服务商油站信息' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_OIL_STATION.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_oil_station'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:48,378][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xf2\xfd\xe4\x96\x89\x11G\xf6\xb9E\xdf\x0c\xc7G\xc4f', secret=b'\xc6\xf3|l\xdf\x13OH\xb4%\xbe\x03\x9d\xcel\xf8'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:48,378][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_csp_oil_station comment '服务商油站信息' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_OIL_STATION.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_oil_station']
+[2023-01-09 23:30:48,379][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:48,379][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_CSP_OIL_STATION_DEVICE metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_CSP_OIL_STATION_DEVICE' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_CSP_OIL_STATION_DEVICE' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_CSP_OIL_STATION_DEVICE') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:48,480][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_csp_oil_station_device comment '服务商油站关联设备' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_OIL_STATION_DEVICE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_oil_station_device']
+[2023-01-09 23:30:48,480][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_csp_oil_station_device comment '服务商油站关联设备' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_OIL_STATION_DEVICE.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_oil_station_device'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:48,517][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xac\x90Y\xfcc\xe8Ms\xb1\x04\x89\xc4\xd4\xe4n\xc0', secret=b'N\xd3\n0\xcc9K\x14\xbd4\xf6oa\xd1\xba\xb5'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:48,517][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_csp_oil_station_device comment '服务商油站关联设备' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_OIL_STATION_DEVICE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_oil_station_device']
+[2023-01-09 23:30:48,517][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:48,517][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_CSP_WAREHOUSE_CODE metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_CSP_WAREHOUSE_CODE' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_CSP_WAREHOUSE_CODE' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_CSP_WAREHOUSE_CODE') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:48,643][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_csp_warehouse_code comment '服务商仓库代码' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_WAREHOUSE_CODE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_warehouse_code']
+[2023-01-09 23:30:48,643][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_csp_warehouse_code comment '服务商仓库代码' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_WAREHOUSE_CODE.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_warehouse_code'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:48,678][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xa7\x18\xec\xc9\x15\x9aA@\x98\xca\x19n\xbd-\xc7N', secret=b'*\xcf\xfb\x93\r\xa2E!\xa9H;_O\xe9\x9a5'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:48,678][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_csp_warehouse_code comment '服务商仓库代码' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_CSP_WAREHOUSE_CODE.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_csp_warehouse_code']
+[2023-01-09 23:30:48,679][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:48,679][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_DEVICE_INST_MONEY metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_DEVICE_INST_MONEY' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_DEVICE_INST_MONEY' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_DEVICE_INST_MONEY') t3 on t1.columnName = t3.COLUMN_NAME
+]
+[2023-01-09 23:30:48,776][MainThread:1280][task_id:pyhive.hive][hive.py:449][INFO][create external table if not exists one_make_ods.ciss_device_inst_money comment '安装费用金额' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_DEVICE_INST_MONEY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_device_inst_money']
+[2023-01-09 23:30:48,776][MainThread:1280][task_id:pyhive.hive][hive.py:453][DEBUG][TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b']\xf9\xd0>\xbb\xa9M\xfd\x96K\x92\xbem\xfa(I', secret=b' K\xce\xed\x8c\xb6Mq\xa7%\xdb\xee\xf1D\x10\x88')), statement="create external table if not exists one_make_ods.ciss_device_inst_money comment '安装费用金额' \n partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'\nSTORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'\n OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'\ntblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_DEVICE_INST_MONEY.avsc')\n location '/data/dw/ods/one_make/full_imp/ciss4.ciss_device_inst_money'", confOverlay=None, runAsync=False, queryTimeout=0)]
+[2023-01-09 23:30:48,812][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'g\x86%\x0eM\xc8K\xdd\x95\xb2\xf1@\x80\x17\xdd#', secret=b'\xdb(G\xcd\xac[Cq\xa8\xdfe\tg\xf4\x85\xbf'), operationType=0, hasResultSet=True, modifiedRowCount=None))]
+[2023-01-09 23:30:48,812][MainThread:1280][task_id:root][CreateSparkTableFromOracle.py:64][WARNING][oracle表转换ods后的Hive DDL语句为:
+create external table if not exists one_make_ods.ciss_device_inst_money comment '安装费用金额' 
+ partitioned by (dt string) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
+ OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
+tblproperties ('avro.schema.url'='hdfs:///data/dw/ods/one_make/avsc/CISS4_CISS_DEVICE_INST_MONEY.avsc')
+ location '/data/dw/ods/one_make/full_imp/ciss4.ciss_device_inst_money']
+[2023-01-09 23:30:48,813][MainThread:1280][task_id:pyhive.hive][hive.py:583][DEBUG][TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))]
+[2023-01-09 23:30:48,813][MainThread:1280][task_id:root][OracleMetaUtil.py:32][WARNING][query oracle table CISS_FAULT_HOUR metadata sql:
+select columnName, dataType, dataScale, dataPercision, columnComment, tableComment from
+(select column_name columnName,data_type dataType, DATA_SCALE dataScale,DATA_PRECISION dataPercision, TABLE_NAME
+from all_tab_cols where 'CISS_FAULT_HOUR' = table_name) t1
+left join (select comments tableComment,TABLE_NAME from all_tab_comments WHERE 'CISS_FAULT_HOUR' = TABLE_NAME) t2 on t1.TABLE_NAME = t2.TABLE_NAME
+left join (select comments columnComment, COLUMN_NAME from all_col_comments WHERE TABLE_NAME='CISS_FAULT_HOUR') t3 on t1.columnName = t3.COLUMN_NAME
+]
