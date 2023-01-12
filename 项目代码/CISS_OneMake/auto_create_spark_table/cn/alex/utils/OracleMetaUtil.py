@@ -11,13 +11,8 @@ from auto_create_spark_table.cn.alex.entity.ColumnMeta import ColumnMeta
 from auto_create_spark_table.cn.alex.entity.TableMeta import TableMeta
 
 
+# 用于读取Oracle中表的信息【表名、列的信息、表的注释】封装成TableMeta
 def getTableMeta(oracleConn, tableName) -> TableMeta:
-    """
-    用于读取Oracle中表的信息【表名、列的信息、表的注释】封装成TableMeta
-    :param oracleConn: Oracle连接对象
-    :param tableName: 表的名称
-    :return:
-    """
     # 从连接中获取一个游标【SQL对象】
     cursor = oracleConn.cursor()
     try:

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="35b76d8e-9a0f-4cf8-9546-f5e2dc6de1ce" name="Flink03">
+        <fileTransfer accessType="SFTP" host="Flink03" port="22" sshConfigId="ec6e8591-6304-4eaf-99ef-ef11edd3039c" sshConfig="root@Flink03:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

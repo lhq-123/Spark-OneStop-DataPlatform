@@ -4,12 +4,8 @@ __coding__ = "utf-8"
 __author__ = "alex"
 
 
+# 基于传递的所有表名，将增量表与全量表进行划分到不同的列表中
 def getODSTableNameList(fileNameList):
-    """
-    基于传递的所有表名，将增量表与全量表进行划分到不同的列表中
-    :param fileNameList: 所有表名的列表
-    :return: 增量与全量列表
-    """
     full_list = []
     incr_list = []
     result_list = []

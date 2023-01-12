@@ -4,12 +4,8 @@ __coding__ = "utf-8"
 __author__ = "alex"
 
 
+# 加载表名所在的文件
 def readFileContent(fileName):
-    """
-    加载表名所在的文件
-    :param fileName:存有表名的文件路径
-    :return:存有所有表名的列表集合
-    """
     tableNameList = []
     fr = open(fileName)
     for line in fr.readlines():

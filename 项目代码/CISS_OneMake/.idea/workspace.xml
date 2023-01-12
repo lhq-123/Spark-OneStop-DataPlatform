@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d168af1f-6786-44b4-b83f-000563d483df" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_integration/python/full_import_tables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_integration/python/incr_import_tables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_integration/python/upload_avro_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_integration/shell/sqoop_script/full_import_tables.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_integration/shell/sqoop_script/full_import_tables.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_integration/shell/sqoop_script/incr_import_tables.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_integration/shell/sqoop_script/incr_import_tables.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_integration/shell/sqoop_script/upload_avro_schema.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1 项目架构及环境.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1 项目架构及环境.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2 数据平台架构.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../2 数据平台架构.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5 数据建模-ODS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CISS_OneMake.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CISS_OneMake.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateSparkTableFromOracle.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/datatospark/CreateSparkTableFromOracle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ConfigUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ConfigUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ConnectUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ConnectUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/OracleMetaUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/OracleMetaUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ReadFileUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/ReadFileUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/TableNameUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_create_spark_table/cn/alex/utils/TableNameUtil.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -24,23 +54,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/auto_create_hive_table/resources" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/admin/Desktop/Spark一站式历史数据平台/Spark-OneStop-DataPlatform/项目代码/CISS_OneMake",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake" />
+      <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake\data_integration" />
       <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake\auto_create_hive_table\resources" />
       <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake\auto_create_hive_table" />
       <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake\auto_create_hive_table\cn\itcast\resource" />
-      <recent name="C:\Users\admin\Desktop\Spark一站式历史数据平台\Spark-OneStop-DataPlatform\项目代码\CISS_OneMake" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MainApplication">
+  <component name="RunManager" selected="Python.test">
     <configuration name="EntranceApp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CISS_OneMake" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,8 +123,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CISS_OneMake" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.MainApplication" />
         <item itemvalue="Python.EntranceApp" />
       </list>
@@ -102,17 +163,46 @@
       <updated>1673249417080</updated>
       <workItem from="1673249418231" duration="929000" />
       <workItem from="1673272723506" duration="5175000" />
+      <workItem from="1673278774893" duration="19000" />
+      <workItem from="1673316281141" duration="1409000" />
+      <workItem from="1673350856715" duration="35000" />
+      <workItem from="1673351317136" duration="1712000" />
+      <workItem from="1673354292607" duration="1205000" />
+      <workItem from="1673499930994" duration="29000" />
+      <workItem from="1673499984570" duration="221000" />
+      <workItem from="1673500254922" duration="51000" />
+      <workItem from="1673500406289" duration="136000" />
+      <workItem from="1673504680329" duration="22000" />
+      <workItem from="1673504789795" duration="48000" />
+      <workItem from="1673505471190" duration="25000" />
+      <workItem from="1673505935832" duration="28000" />
+      <workItem from="1673505993399" duration="203000" />
+      <workItem from="1673506565664" duration="43000" />
+      <workItem from="1673506707273" duration="40000" />
+      <workItem from="1673506753406" duration="1000000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CISS_OneMake$EntranceApp.coverage" NAME="EntranceApp 覆盖结果" MODIFIED="1673273370896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_create_hive_table/cn/itcast" />
+    <SUITE FILE_PATH="coverage/CISS_OneMake$test.coverage" NAME="test 覆盖结果" MODIFIED="1673507467533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CISS_OneMake$MainApplication.coverage" NAME="MainApplication 覆盖结果" MODIFIED="1673278243524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_create_spark_table/cn/alex" />
+    <SUITE FILE_PATH="coverage/CISS_OneMake$EntranceApp.coverage" NAME="EntranceApp 覆盖结果" MODIFIED="1673273370896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_create_hive_table/cn/itcast" />
   </component>
 </project>

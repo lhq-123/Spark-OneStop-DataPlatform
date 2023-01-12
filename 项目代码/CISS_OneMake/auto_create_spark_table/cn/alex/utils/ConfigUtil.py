@@ -23,8 +23,3 @@ def getOracleConfig(key):
 # 根据key获得spark连接hive数据库的配置信息
 def getSparkConnHiveConfig(key):
     return config.get('SparkConnHive', key)
-
-
-# 根据key获得hive数据库的配置信息
-def getHiveConfig(key):
-    return config.get('HiveConn', key)
